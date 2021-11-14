@@ -25,6 +25,25 @@
         <div id="unity-build-title">CSC495-Firebase</div>
       </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCHWFGxP8kGLOc6kds9Go-0mpe8wWEb-Vk",
+        authDomain: "csc495-firebasedemo.firebaseapp.com",
+        projectId: "csc495-firebasedemo",
+        storageBucket: "csc495-firebasedemo.appspot.com",
+        messagingSenderId: "986450081898",
+        appId: "1:986450081898:web:aab258c6df2aafe736f213"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
@@ -84,30 +103,6 @@
       };
       document.body.appendChild(script);
     </script>
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
     
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCHWFGxP8kGLOc6kds9Go-0mpe8wWEb-Vk",
-        authDomain: "csc495-firebasedemo.firebaseapp.com",
-        projectId: "csc495-firebasedemo",
-        storageBucket: "csc495-firebasedemo.appspot.com",
-        messagingSenderId: "986450081898",
-        appId: "1:986450081898:web:aab258c6df2aafe736f213",
-        measurementId: "G-EHFLKQBEGZ"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
   </body>
 </html>
