@@ -25,32 +25,13 @@
         <div id="unity-build-title">CSC495-Firebase</div>
       </div>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCHWFGxP8kGLOc6kds9Go-0mpe8wWEb-Vk",
-        authDomain: "csc495-firebasedemo.firebaseapp.com",
-        projectId: "csc495-firebasedemo",
-        storageBucket: "csc495-firebasedemo.appspot.com",
-        messagingSenderId: "986450081898",
-        appId: "1:986450081898:web:aab258c6df2aafe736f213"
-      };
-    
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.gz",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.gz",
-        codeUrl: buildUrl + "/WebGL.wasm.gz",
+        dataUrl: buildUrl + "/WebGL.data",
+        frameworkUrl: buildUrl + "/WebGL.framework.js",
+        codeUrl: buildUrl + "/WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CSC495-Firebase",
@@ -92,7 +73,6 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          this.unityInstance = unityInstance;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
@@ -103,6 +83,5 @@
       };
       document.body.appendChild(script);
     </script>
-    
   </body>
 </html>
