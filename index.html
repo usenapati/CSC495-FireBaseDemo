@@ -27,45 +27,26 @@
     </div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script type="module">
-
   // Import the functions you need from the SDKs you need
-
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-
-
   // TODO: Add SDKs for Firebase products that you want to use
-  
   // https://firebase.google.com/docs/web/setup#available-libraries
 
-
   // Your web app's Firebase configuration
-
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
   const firebaseConfig = {
-
     apiKey: "AIzaSyCHWFGxP8kGLOc6kds9Go-0mpe8wWEb-Vk",
-
     authDomain: "csc495-firebasedemo.firebaseapp.com",
-
     databaseURL: "https://csc495-firebasedemo-default-rtdb.firebaseio.com",
-
     projectId: "csc495-firebasedemo",
-
     storageBucket: "csc495-firebasedemo.appspot.com",
-
     messagingSenderId: "986450081898",
-
     appId: "1:986450081898:web:aab258c6df2aafe736f213"
 
   };
-
-
   // Initialize Firebase
-
   const app = initializeApp(firebaseConfig);
-
-
 </script>
 
     <script>
@@ -116,6 +97,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+          window.unityInstance = unityInstance;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
