@@ -10,7 +10,7 @@ mergeInto(LibraryManager.library, {
             unityInstance.Module.SendMessage(parsedObjectName, parsedCallback, JSON.stringify(snapshot.val()));
         });
         } catch (error) {
-            unityInstance.Module.SendMessage(parsedObjectName, parsedFallback, "There was an error: " + error.message);
+            unityInstance.Module.SendMessage(parsedObjectName, parsedFallback, JSON.stringify(error, Object.getOwnPropertyNames(error)));
         }
     }
 });
