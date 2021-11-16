@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "986450081898",
+    "firebase_url": "https://csc495-firebasedemo-default-rtdb.firebaseio.com",
+    "project_id": "csc495-firebasedemo",
+    "storage_bucket": "csc495-firebasedemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986450081898:android:0ac70320d484a37d36f213",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.CSC495Firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986450081898-gfh2enar02j38ie0072iu199crn80qt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZLivvAFkRaWLFBhRJtN-VmC7LwqGFRXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986450081898-gfh2enar02j38ie0072iu199crn80qt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
