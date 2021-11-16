@@ -2,6 +2,10 @@
 # Unity folders and files
 ###
 [Aa]ssets/AssetStoreTools*
+[Aa]ssets/Editor Default Resources*
+[Aa]ssets/ExternalDependencyManager*
+[Aa]ssets/Firebase*
+[Aa]ssets/Plugins*
 [Bb]uilds/
 [Ll]ibrary/
 [Ll]ocal[Cc]ache/
